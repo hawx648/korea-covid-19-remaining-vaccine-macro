@@ -170,28 +170,28 @@ def input_config():
     print("사각형 모양으로 백신범위를 지정한 뒤, 해당 범위 안에 있는 백신을 조회해서 남은 백신이 있으면 Chrome 브라우저를 엽니다.")
     top_x = None
     while top_x is None:
-        top_x = input("사각형의 위쪽 좌측 x값을 넣어주세요. 127.xxxxxx: ").strip()
+        top_x = input("사각형의 위쪽 좌측 x값을 넣어주세요. 127.07029: ").strip()
         if not is_in_range(coord_type="x", coord=top_x):
             print(f"올바른 좌표 값이 아닙니다. 입력 값 : {top_x}")
             top_x = None
 
     top_y = None
     while top_y is None:
-        top_y = input("사각형의 위쪽 좌측 y값을 넣어주세요 37.xxxxxx: ").strip()
+        top_y = input("사각형의 위쪽 좌측 y값을 넣어주세요 37.51671: ").strip()
         if not is_in_range(coord_type="y", coord=top_y):
             print(f"올바른 좌표 값이 아닙니다. 입력 값 : {top_y}")
             top_y = None
 
     bottom_x = None
     while bottom_x is None:
-        bottom_x = input("사각형의 아래쪽 우측 x값을 넣어주세요 127.xxxxxx: ").strip()
+        bottom_x = input("사각형의 아래쪽 우측 x값을 넣어주세요 127.12836: ").strip()
         if not is_in_range(coord_type="x", coord=bottom_x, user_min_x=float(top_x)):
             print(f"올바른 좌표 값이 아닙니다. 입력 값 : {bottom_x}")
             bottom_x = None
 
     bottom_y = None
     while bottom_y is None:
-        bottom_y = input("사각형의 아래쪽 우측 y값을 넣어주세요 37.xxxxxx: ").strip()
+        bottom_y = input("사각형의 아래쪽 우측 y값을 넣어주세요 37.50183: ").strip()
         if not is_in_range(coord_type="y", coord=bottom_y, user_max_y=float(top_y)):
             print(f"올바른 좌표 값이 아닙니다. 입력 값 : {bottom_y}")
             bottom_y = None
